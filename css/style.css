@@ -3,8 +3,9 @@
 body {
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
+	background-image: url('../images/metal-texture.jpg');
 }
-
+/*establishes content behavior*/
 #container {
 	width: 85%;
 	max-width: 980px;
@@ -16,12 +17,12 @@ body {
 header {
 	background-color: #F2F2F2;
 	border-radius: 5px;
-	border: .5px solid #DDDDDD;
+	border: 1px solid #666972;
 }
 
 h1 {
 	font-family: 'Oswald', sans-serif;
-	color: #EC1415;
+	color: #666972;
 	text-shadow:
 			-1px -1px 0 #000,  
     		1px -1px 0 #000,
@@ -33,9 +34,10 @@ h1 {
 }
 
 section {
-	border: .5px solid #DDDDDD;
+	border: 1px solid #666972;
 	border-radius: 5px;
 	margin: 5% auto;
+	background-color: #F2F2F2;
 }
 
 button {
@@ -47,15 +49,26 @@ button {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 30px;
 	margin: 0px auto;
 	background-color: #000;
 	color: #FFFFFF;
 	border-radius: 5px;
 }
+/* making the sections contents fit nicely */
+table {
+	margin: 1% 4%;
+}
+
+thead {
+	background-color: #666972;
+	color: #FFFFFF;
+}
 
 th {
 	width: 15%;
+	font-size: 20px;
+	letter-spacing: .05em;
 }
 
 form {

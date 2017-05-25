@@ -2,17 +2,23 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
+	<!--My style css-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Train Scheduler</title>
+	<!--Firebase javascript-->
 	<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+	<!--jQuery library script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--Moment javascript for timing-->
 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<!--My personal javascript-->
 	<script type="text/javascript" src="javascript/app.js"></script>
 </head>
 <body id=container>
 	<header>
 		<h1>Train Scheduler</h1>
 	</header>
-
+	<!--Updates train schedule based on database info based on user input-->
 	<section>
 		<h2>Current Train Schedule</h2>
 		<table>
@@ -29,7 +35,7 @@
 			</tbody>
 		</table>
 	</section>
-	
+	<!--Edits the train schedule based on user input -->
 	<section>
 		<h2>Add Train</h2>
 		<form>
