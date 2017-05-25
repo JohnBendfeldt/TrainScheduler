@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Train Scheduler</title>
+	<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<script type="text/javascript" src="javascript/app.js"></script>
+</head>
+<body id=container>
+	<header>
+		<h1>Train Scheduler</h1>
+	</header>
+
+	<section>
+		<h2>Current Train Schedule</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Train Name</th>
+					<th>Destination</th>
+					<th>Frequency</th>
+					<th>Next Arrival</th>
+					<th>Minutes Away</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</section>
+	
+	<section>
+		<h2>Add Train</h2>
+		<form>
+			<label for="train-name-input">Train Name</label>
+			<br>
+				<input id="train-name-input" type="text">
+			<br>
+			<label for="destination-input">Destination</label>
+			<br>
+				<input id="destination-input" type="text">
+			<br>
+			<label for="first-train-input">First Train Time (HH:mm - military time)</label>
+			<br>
+				<input id="first-train-input" type="text">
+			<br>
+			<label for="frequency-input">Frequency (min)</label>
+			<br>
+				<input id="frequency-input" type="text">
+			<br>
+			<button id="add-train-btn" type="submit">Submit</button>
+		</form>
+	</section>
+
+</body>
+</html>
