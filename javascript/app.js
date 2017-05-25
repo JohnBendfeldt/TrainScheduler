@@ -47,17 +47,17 @@ database.ref().on('child_added', function(childSnapshot, prevChildKey) {
   var cSfrequency = childSnapshot.val().dBfrequency;
 
   //establishes times for trains using moment
-  var firstTimeConverted = moment(cSfirstTrainTime, "hh:mm").subtract(1, "years");
+  var firstTimeConverted = moment(cSfirstTrainTime, 'hh:mm').subtract(1, 'years');
   var currentTime = moment();
-  var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
+  var diffTime = moment().diff(moment(firstTimeConverted), 'minutes');
   var tRemainder = diffTime % cSfrequency;
   var minutesAway = cSfrequency - tRemainder;
-  var calcNextArrival = moment().add(minutesAway, "minutes");
-  var nextArrival = moment(calcNextArrival).format("hh:mm");
+  var calcNextArrival = moment().add(minutesAway, 'minutes');
+  var nextArrival = moment(calcNextArrival).format('hh:mm');
 
   //append train data to the table
-  $("table > tbody").append("<tr><td>" + cStrainName + "</td><td>" + cSdestination + "</td><td>" +
-  cSfrequency + "</td><td>" + nextArrival + "</td><td>" + minutesAway +  "</td></tr>");
+  $('table > tbody').append('<tr><td>' + cStrainName + '</td><td>' + cSdestination + '</td><td>Every ' +
+  cSfrequency + ' minutes' + '</td><td>' + nextArrival + '</td><td>' + minutesAway +  '</td></tr>');
 })
 
 });
